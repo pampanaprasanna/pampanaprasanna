@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Note App</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script async src="./code.js"></script>
+  </head>
+  <body>
+    <div class="transition-screen">
+      <h1 class="transition-text">NOTE LAND</h1>
+      <img src="feather-pen.png" alt="">  
+    </div>
+    <div class="app-container">
+      <div class="slidebar">
+        <header>
+          <h1> <span>NOTE LAND</span> <img src="feather-pen.png" alt=""></h1>
+      </header>
+        <div class="note-container"></div>
+        <button class="new-note-btn">New Note</button>
+      </div>
+      <div class="main-content">
+        <div class="inner-div">
+          <div class="empty-note">
+            <img src="note.png" alt="">
+            <h1>No Notes Found</h1>
+            <h4>Click New Note to add notes</h4>
+          </div>
+
+          <form class="note-form hidden">
+            <input type="text" class="note-title" placeholder="Note Title" />
+            <textarea
+              class="note-description"
+              placeholder="Note Description"
+            ></textarea>
+            <button type="submit" class="add-note-btn">Add Note</button>
+          </form>
+
+          <div class="note-section hidden"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

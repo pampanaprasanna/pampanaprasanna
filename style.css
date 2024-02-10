@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  font-family: "Playfair Display", serif;
+}
+
+:root {
+  --color-primary: #bde0fe;
+  --color-secondary: #ffc8dd;
+  --color-accent: #000000;
+  --color-secondary-variant: #ffffff;
+}
+
+.transition-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-secondary);
+  color: var(--color-accent);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 40;
+  transition: transform 1s ease-in-out;
+}
+
+.transition-screen.hide {
+  transform: translateX(-100%);
+}
+
+.transition-text {
+  font-size: 48px;
+  cursor: pointer;
+}
+.transition-screen img{
+    height: 100px;
+}
+.new-note-btn{
+  color: #0c0201;
+border: none;
+padding: 0.7rem 2rem;
+border-radius: 12px;
+font-weight: bold;
+border: 1px solid rgb(186, 129, 212);
+cursor: pointer;
+}
+
+.app-container {
+  display: flex;
+  height: 100vh;
+}
+
+.slidebar {
+  width: 18.12%;
+  background-color: var(--color-secondary);
+  color: var(--color-accent);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+}
+
+
+.slidebar h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.slidebar  img{
+    height: 40px;
+}
+.app-container .sidebar header h1 {
+  display: flex;
+  align-items: center;
+}
+
+.app-container .sidebar header h1 img {
+  margin-right: 10px; /* Adjust the margin as needed */
+}
+
+.new-note-btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.note-container {
+  width: 100%;
+  height: 60%;
+  border: 1px solid var(--color-secondary-variant);
+  border-radius: 8px;
+  padding: 6.5px;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.note {
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: var(--color-secondary-variant);
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.note-description{
+  height: 200px;
+  width: 100%;
+}
+
+.main-content {
+  flex: 1;
+  padding: 25px;
+  background-color: var(--color-primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.inner-div {
+  background-color: var(--color-secondary-variant);
+  width: 80%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+}
+
+.empty-note {
+  padding: 20px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.empty-note img{
+  height: 200px;
+}
+.note-form {
+  padding: 20px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.note-title {
+  width: 83%;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid var(--color-primary);
+  font-size: 17px;
+  padding-bottom: 10px;
+}
+.add-note-btn{
+  color: #e774eb;
+border: none;
+padding: 0.7rem 2rem;
+border-radius: 12px;
+font-weight: bold;
+border: 1px solid rgb(186, 129, 212);
+cursor: pointer;
+}
+
+.note-description {
+  width: 83%;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid var(--color-primary);
+  font-size: 16px;
+}
+
+.add-note-btn {
+  display: block;
+  width: 200px;
+  height: 40px;
+}
+
+.deleteBtn,
+.addtaskBtn {
+  /* width: 100px;
+  height: 40px; */
+  color: #f14a37;
+border: none;
+padding: 0.7rem 2rem;
+border-radius: 12px;
+font-weight: bold;
+border: 1px solid rgb(186, 129, 212);
+cursor: pointer;
+}
+
+.note-section {
+  padding: 20px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  color: #282e44;
+}
+
+.task-list {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.hidden {
+  display: none;
+}
